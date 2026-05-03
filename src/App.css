@@ -1,0 +1,25 @@
+.App {
+  text-align: center;
+}
+
+.menu {
+  backdrop-filter: blur(8px);
+}
+
+.font-Lato {
+  font-family: "Lato";
+}
+.font-Almarai {
+  font-family: "Almarai";
+}
+
+/* from-[#FF5F6D] to-[#082784] */
+.borderGradientTogglebtn{
+  border-radius: 50px;
+  border: 2px solid transparent;
+  background: linear-gradient(45deg, #ff5f6d, #082784) border-box;
+  mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+  -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}

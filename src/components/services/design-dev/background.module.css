@@ -1,0 +1,16 @@
+
+
+.background {
+  background-image: linear-gradient(
+      to right,
+      rgba(255, 95, 109, 0.9),
+      rgba(8, 39, 132, 0.9)
+    ),
+    url("../../../assets/serv-header.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* height: 400px; */
+  height: fit-content;
+}
+
+

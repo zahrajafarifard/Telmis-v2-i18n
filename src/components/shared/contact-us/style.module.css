@@ -1,0 +1,44 @@
+.gradientBg {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(8, 39, 132, 0.8),
+      rgba(8, 39, 132, 0.8)
+    ),
+    url("../../../assets/home-contactus.png");
+  /* background-size: 100% 100%; */
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 70vh;
+}
+
+.blurStyle {
+  backdrop-filter: blur(100px);
+
+  background: var(
+    --main-linear-vertical,
+    linear-gradient(180deg, #09257a 0%, #eaf2fe 164%)
+  );
+}
+
+@media (max-width: 670px) {
+  .gradientBg {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(8, 39, 132, 0.8),
+        rgba(8, 39, 132, 0.8)
+      ),
+      url("../../../assets/home-contactus-small-screen.png");
+    background-position: center;
+    height: 92vh;
+  }
+}
+@media (max-width: 450px) {
+  .gradientBg {
+    height: 95vh;
+  }
+}
+@media (max-width: 400px) {
+  .gradientBg {
+    height: 98vh;
+  }
+}

@@ -1,0 +1,172 @@
+.container {
+  /* overflow: hidden; */
+  width: 100%;
+  height: 400px;
+  position: relative;
+  /* border: solid red 1px; */
+}
+
+.box {
+  width: 0;
+  height: 250px;
+  background-color: #fdd9e5;
+  border-radius: 40px;
+  text-align: justify;
+  position: absolute;
+  left: var(--current-index);
+  /* top: -100px; */
+  transform: translateY(0);
+  transition: width 1s ease-in-out;
+  overflow: hidden;
+}
+
+.box.visible {
+  animation: fall 1s ease-in-out, bounce 2s ease-in-out 0.5s,
+    stretch 1s ease-in-out 1.5s;
+  animation-fill-mode: forwards; /* Ensure the final state of the animation is maintained */
+}
+
+@keyframes fall {
+  0% {
+    top: -10px;
+  }
+  100% {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+@keyframes bounce {
+  0%,
+  90% {
+    width: 24%;
+    height: 190px;
+
+    transform: translateY(-50%);
+  }
+  100% {
+    width: 24%;
+    /* height:320px; */
+    height: fit-content;
+
+    transform: translateY(-50%);
+  }
+  50% {
+    transform: translateY(-70%);
+  }
+}
+
+@keyframes stretch {
+  0% {
+    /* width: 100px; */
+  }
+  100% {
+    width: 100%;
+
+    inset: 0;
+    top: 220px;
+  }
+}
+
+.text {
+  background-color: #fdd9e5;
+  border-radius: 40px;
+  white-space: pre-line;
+  display: inline-block;
+  padding: 40px;
+  opacity: 0;
+  animation: slideDown 2s ease-in-out 2.5s forwards;
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 920px) {
+  @keyframes bounce {
+    /* 0%,
+    100% {
+      width: 190px;
+      height: 190px;
+      transform: translateY(-50%);
+    }
+    50% {
+      transform: translateY(-70%);
+    } */
+
+    0%,
+    90% {
+      width: 190px;
+      height: 190px;
+
+      transform: translateY(-50%);
+    }
+    100% {
+      width: 190px;
+
+      height: fit-content;
+
+      transform: translateY(-50%);
+    }
+    50% {
+      transform: translateY(-70%);
+    }
+  }
+}
+@media (max-width: 990px) {
+  .text {
+    padding: 30px;
+    font-size: 15px;
+  }
+}
+@media (max-width: 750px) {
+  .text {
+    font-size: 13px;
+  }
+}
+@media (max-width: 550px) {
+  @keyframes stretch {
+    0% {
+      /* width: 100px; */
+    }
+    100% {
+      width: 100%;
+
+      inset: 0;
+      top: 250px;
+    }
+  }
+}
+@media (max-width: 450px) {
+  @keyframes stretch {
+    0% {
+      /* width: 100px; */
+    }
+    100% {
+      width: 100%;
+
+      inset: 0;
+      top: 300px;
+    }
+  }
+}
+@media (max-width: 400px) {
+  @keyframes stretch {
+    0% {
+      /* width: 100px; */
+    }
+    100% {
+      width: 100%;
+
+      inset: 0;
+      top: 350px;
+    }
+  }
+}

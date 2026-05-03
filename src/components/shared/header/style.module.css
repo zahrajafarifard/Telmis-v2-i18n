@@ -1,0 +1,17 @@
+.borderGradient2 {
+  border: 5px solid transparent; /* Adjust border width */
+  border-radius: 15px; /* Border radius */
+  border-image: linear-gradient(to right, darkblue, darkorchid) 1;
+}
+
+.borderGradient {
+  background: 
+    /* Grey background */ linear-gradient(to right, #9c20aa, #fb3570) border-box; /* Gradient border */
+  /* color: #313149; */
+  padding: 10px;
+  border: 5px solid transparent; /* Adjust border width */
+  border-radius: 15px; /* Border radius */
+  display: inline-block;
+  margin: 75px 0;
+ 
+}

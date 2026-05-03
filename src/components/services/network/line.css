@@ -1,0 +1,13 @@
+.section {
+  flex: 1;
+
+  transition: background-color 0.5s ease;
+}
+
+.section.active {
+  background: linear-gradient(to right, #ff5f6d, #082784);
+}
+
+.transition-effect {
+  transition: all 31s ease-in-out;
+}

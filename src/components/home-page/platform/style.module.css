@@ -1,0 +1,17 @@
+.background {
+  background-image: url("../../../assets/home\ -\ BG.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media (max-width: 990px) {
+  .background {
+    background-image: url("../../../assets/home-bg-tablet.png");
+    background-size: 100% 100%;
+  }
+}
+@media (max-width: 600px) {
+  .background {
+    background-image: url("../../../assets/home\ -\ BG\ -\ small.png");
+  }
+}

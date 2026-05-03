@@ -1,0 +1,9 @@
+.section {
+  flex: 1;
+
+  transition: background-color 2s ease;
+}
+
+.section.active {
+  background: linear-gradient(to right, #ff5f6d, #082784);
+}
