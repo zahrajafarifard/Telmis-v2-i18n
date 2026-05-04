@@ -1,13 +1,13 @@
 # Telmis v2
 
-**Telmis v2** is a bilingual React web application built with English and Arabic support, including dynamic RTL/LTR layout handling. This app demonstrates responsive design, internationalization, and a modern frontend architecture suitable for recruiter and portfolio presentation.
+**Telmis v2** is a bilingual React web application built with English and Arabic support, including dynamic RTL/LTR layout handling. This app demonstrates responsive design, internationalization, and a modern frontend architecture suitable for portfolio presentation.
 
 ## Features
 
 - Bilingual interface: English and Arabic
 - RTL/LTR direction support for Arabic and English layouts
 - Responsive design for desktop and mobile
-- Clean, recruiter-friendly UI structure
+- Clean UI structure
 - Built with React, Tailwind CSS, i18next, and Redux Toolkit
 - Modular component architecture for maintainability
 
@@ -54,7 +54,7 @@ npm run build
 
 - The application supports both left-to-right (LTR) and right-to-left (RTL) languages.
 - Language switching is implemented using `i18next` and `react-i18next`.
-- The UI is designed to be recruiter-friendly with clear component structure and clean styling.
+- The UI is designed with clear component structure and clean styling.
 
 ## Author
 
